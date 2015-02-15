@@ -1,0 +1,41 @@
+<div class="col-md-12">
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="exampleInputName2" class="col-md-4">Select Movie</label>
+      <div class="col-md-6">
+        <select class="form-control" ng-options="movie.movieId as movie.movieName for movie in movieData" ng-model="movieId">
+        </select>
+      </div>
+    </div>
+  </form>
+
+  <div class="col-md-12">
+    <div class="col-md-4" ng-repeat="movie in movieData | filter:{movieId:movieId}">
+      <div>
+        <img ng-src={{movie.movieImg}}  alt=""/>
+      </div>
+    </div>
+    <div class="col-md-8" ng-repeat="data in theatreData | filter:filterTheatre">      
+      <div><h4>{{data.theatreName}}</h4></div>
+      <div class="">
+        <table class="table table-hover">
+          <tr ng-repeat="screens in data.Screens | filter:{movieId:movieId}">
+            <td>{{screens.screenName}}</td>
+            <td>Available : {{screens.availableSeats}}</td>
+            <td><a href="" ng-click="bukTicket($parent.data.theatreId, screens.screenId)" ng-enabled="screens.availableSeats<1?true:false">Book Tickets</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Warning -->
+
+<div class="modal fade bs-example-modal-sm" id="warning" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <p> Please Sign In to book ticket<p></p>
+    </div>
+  </div>
+</div>

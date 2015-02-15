@@ -1,0 +1,114 @@
+<html ng-app="movie">
+<head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles/custom.css" />
+  <link rel="stylesheet" href="styles/movie.css" />
+  
+  <title>Movie Ticket Booking</title>
+</head>
+  
+<body ng-controller="userCtrl" ng-style="bgImg">
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <a href="#/movie"><img class="hme" src="img/home.png"/></a>
+          <div class="pull-right" ng-enabled="logout" style="margin-right: -83px;">
+            <label style="margin-top: 15px;margin-right: 25px;" ng-cloak>{{userName}}</label>
+            <a href="" ng-click="signout()"><img class="" ng-enabled="logout" src="img/exit.png" style="height:20px;width:20px;"/></a>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+  
+    <!-- Route Page -->
+    <div class="jumbotron containerBG">
+      <div ng-view></div>
+    </div>
+  
+    <a class="btn signInBtn" href="" role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> &nbsp;Sign In</a>
+  <!-- Sign In Form -->
+  <div class="col-md-2 subDetail" id="signIn" ng-init="user={}">
+    <form role="form" id="hmeContact" name ="myForm">
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" name="contEmail" placeholder="Email" ng-model="user.userEmail">
+        <span class="error" ng-show="myForm.user.userEmail.$error.required" > Required !</span><br>
+      </div> 
+      <div class="form-group" style="margin-top:10px;">
+        <input type="password" class="form-control" id="exampleInputEmail11" name="contMob" placeholder="Password" ng-model="user.userPwd">
+        <span class="error" ng-show="myForm.user.userPwd.$error.required" > Required !</span><br>
+      </div>
+     <br> 
+     <button class="btn btn-warning" ng-click="login()">Sign In</button>
+      <a class="pull-right signUpBtn" href="">New User</a>
+    </form>  
+  </div>
+  
+  <!-- Sign Up -->
+  
+  <div class="col-md-2 subDetail" id="signUp" ng-init="user={}">
+    <form role="form" id="hmeContact">
+      <div class="form-group" style="margin-top:10px;">
+        <input type="text" class="form-control" id="exampleInputName" name="contMob" placeholder="Name" ng-model="user.userName">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" name="contEmail" placeholder="Email" ng-model="user.userEmail">
+      </div> 
+      <div class="form-group" style="margin-top:10px;">
+        <input type="password" class="form-control" id="exampleInputEmail11" name="contMob" placeholder="Password" ng-model="user.userPwd">
+      </div>
+      <div class="form-group" style="margin-top:10px;">
+        <input type="password" class="form-control" id="exampleInputEmail11" name="contMob" placeholder="Confirm Password" ng-model="user.userConfirmPwd">
+      </div>
+     <br> 
+     <button class="btn btn-warning" ng-click="signUp()">Sign Up</button>
+    </form>  
+  </div>
+
+  
+  <!-- jquery (bower install jquery) -->
+  <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+  <!-- bootstrap (bower install bootstrap) -->
+  <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- Angular JS -->
+  <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+  
+  <!-- Angular JS Route -->
+  <script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
+  
+  <!-- Angular JS Resource -->
+  <script type="text/javascript" src="/bower_components/angular-resource/angular-resource.min.js"></script>
+  
+  <!-- Angular JS local-storage -->
+  <script type="text/javascript" src="/bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+  
+  
+   <!-- Underscore JS -->
+  <script type="text/javascript" src="/bower_components/underscore/underscore.js"></script>
+  
+  <!-- Application files -->
+  <script src="js/services.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="js/route.js"></script>
+  <!-- Initiate sign in-->
+    <script>
+    $('.signInBtn').click(function(){
+      $('#signIn').toggle();
+      $('#signUp').hide();
+       $( "#exampleInputEmail1" ).focus();
+    }); 
+      
+      
+    $('.signUpBtn').click(function(){
+      $('#signIn').toggle();
+      $('#signUp').toggle();
+      $( "#exampleInputName" ).focus();
+    }); 
+   
+  </script>
+
+</body>
+</html>

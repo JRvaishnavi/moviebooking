@@ -1,0 +1,202 @@
+body {
+/* 	background: url("http://www.crazythemes.com/images/2013/06/Manthrikan-2013-Tamil-Movie-HD-Wallpaper.jpg"); */
+  
+	background: url("../img/image4.jpg");
+  color: #E5DEDE !important;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.containerBG{
+  background: rgba(0, 0, 0, 0.61);
+  padding-left: 44px;
+  padding-top: 90px;
+  width: 60%;
+  margin:0 auto;
+  position: absolute;
+  left: 20%;
+}
+
+.table-hover>tbody>tr:hover {
+  background-color: rgba(224, 140, 70, 0.43);
+  color: rgb(216, 134, 26);
+}
+
+.navbar-inverse{
+  background:#000;
+}
+.changeFond {
+	font-family: "Comic Sans MS", cursive;
+}
+.changeFond li a:hover {
+	border-bottom: 2px solid #f68920 !important;
+	color: #f68920 !important;
+	font-size: 15px !important;
+}
+.navbar-inverse .navbar-inner {
+	background: #000 !important;
+}
+.bs-docs-example {
+	position: relative;
+	margin: 15px 0;
+	background-color: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #000;
+}
+.modal-backdrop.fade.in {
+	background: #f68920 !important;
+	opacity: 0.6;
+}
+#myModal,#bookTicket{
+	font-family: "Comic Sans MS", cursive;
+	background: #000;
+	color: #f68920 !important;
+}
+.close {
+	color: #f68920 !important;
+	opacity: 1 !important;
+	text-shadow: none;
+	margin-top: -13px;
+	margin-right: -14px;
+	background: #000 !important;
+	height: 31px;
+	width: 31px;
+	border-radius: 15px;
+}
+.nav-tabs {
+	border-bottom: none;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+	background-color: #000 !important;
+	border: none;
+	color: #f68920 !important;
+	border-bottom: 2px solid #f68920 !important;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: #000;
+	border: none;
+	color: #f68920 !important;
+	border-bottom: 2px solid #f68920 !important;
+}
+a {
+	color: #f68920 !important;
+}
+.carousel-caption {
+	width: 40%;
+	margin: 0 auto;
+	bottom: 56%;
+	text-align: center;
+	background: none !important;
+}
+ @-webkit-keyframes spaceboots {
+ 0% {
+-webkit-transform: translate(2px, 1px) rotate(0deg);
+}
+ 10% {
+-webkit-transform: translate(-1px, -2px) rotate(-1deg);
+}
+ 20% {
+-webkit-transform: translate(-3px, 0px) rotate(1deg);
+}
+ 30% {
+-webkit-transform: translate(0px, 2px) rotate(0deg);
+}
+ 40% {
+-webkit-transform: translate(1px, -1px) rotate(1deg);
+}
+ 50% {
+-webkit-transform: translate(-1px, 2px) rotate(-1deg);
+}
+ 60% {
+-webkit-transform: translate(-3px, 1px) rotate(0deg);
+}
+ 70% {
+-webkit-transform: translate(2px, 1px) rotate(-1deg);
+}
+ 80% {
+-webkit-transform: translate(-1px, -1px) rotate(1deg);
+}
+ 90% {
+-webkit-transform: translate(2px, 2px) rotate(0deg);
+}
+ 100% {
+-webkit-transform: translate(1px, -2px) rotate(-1deg);
+}
+}
+.bookNow:hover, .bookNow:focus {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+.bookNow {
+	font-family: "Comic Sans MS", cursive;
+	text-decoration: none !important;
+	font-size: 39px;
+	text-shadow: 4px 17px 5px #A9A9A9;
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	display: inline-block;
+}
+.modal-header{
+	border-bottom:none !important;
+}
+.subDetail {
+display: none;
+}
+.subDetail {
+position: fixed;
+color: #fff;
+top: 67px;
+left: 78.6%;
+z-index: 1000;
+width: 13%;
+padding: 4px;
+color: #000;
+/* font-weight: bolder; */
+border: 1px solid #ccc;
+border-radius: 7px;
+background: rgba(87, 93, 98, 0.91);
+background: rgba(221, 135, 52, 0.58) !important;
+}
+
+.signInBtn {
+  border: none;
+  position: fixed;
+  top: 67px !important;
+  left: 92.7%;
+  z-index: 1000;
+  width: 96px;
+  padding: 4px;
+  font-weight: bolder;
+}
+
+.hme{
+  height: 22px;
+  background: rgb(246, 137, 32);
+  margin-top: 11px;
+  margin-left: -90px;
+}
+
+.modal-sm .modal-content{
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.modal-open .modal {
+  background: rgba(230, 81, 3, 0.37) !important;
+}
+
+.modal-content{
+  color: rgb(84, 74, 69);
+  margin-top:15%;
+}

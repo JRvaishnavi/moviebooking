@@ -1,0 +1,22 @@
+[
+    {
+        "userId": 1,
+        "userName": "Test",
+        "userPwd": "Test",
+        "userEmail": "test@test.com",
+        "createdAt": "2015-02-07T18:32:18.823Z",
+        "updatedAt": "2015-02-07T18:32:18.823Z",
+        "id": "54d65a320489f7ad043bfca4",
+        "toJSON": null
+    },
+    {
+        "userId":2,
+        "userName": "test2",
+        "userPwd": "test",
+        "userEmail": "test2@test.com",
+        "createdAt": "2015-02-07T19:10:05.659Z",
+        "updatedAt": "2015-02-07T19:10:05.659Z",
+        "id": "54d6630d5eface7806a9d8d4",
+        "toJSON": null
+    }
+]

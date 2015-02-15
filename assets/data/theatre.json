@@ -1,0 +1,169 @@
+{
+  "theatre":[
+    {
+      "theatreId":1,
+      "theatreName":"Luxe",
+      "Screens":[{
+        "screenId":"1",
+        "screenName":"1",
+        "movieId":1,
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      },
+      {
+        "screenId":"2",
+        "screenName":"2",
+          "movieId":5,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      },
+      {
+        "screenId":"3",
+        "screenName":"3",
+          "movieId":6,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      },
+      {
+        "screenId":"4",
+        "screenName":"4",
+          "movieId":1,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      }]
+    },
+    {
+      "theatreId":2,
+      "theatreName":"Sathyam Cinemas",
+      "Screens":[{
+        "screenId":"1",
+        "screenName":"1",
+          "movieId":2,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      },
+      {
+        "screenId":"2",
+        "screenName":"2",
+          "movieId":1,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      },
+      {
+        "screenId":"3",
+        "screenName":"3",
+          "movieId":1,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      },
+      {
+        "screenId":"4",
+        "screenName":"4",
+          "movieId":4,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      }]
+    },
+    {
+      "theatreId":3,
+      "theatreName":"INOX",
+      "Screens":[{
+        "screenId":"1",
+        "screenName":"1",
+          "movieId":4,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      },
+      {
+        "screenId":"2",
+        "screenName":"2",
+          "movieId":3,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      },
+      {
+        "screenId":"3",
+        "screenName":"3",
+          "movieId":2,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      },
+      {
+        "screenId":"4",
+        "screenName":"4",
+          "movieId":2,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      }]
+    },
+     {
+      "theatreId":4,
+      "theatreName":"IMAX",
+      "Screens":[{
+        "screenId":"1",
+        "screenName":"1",
+          "movieId":1,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      },
+      {
+        "screenId":"2",
+        "screenName":"2",
+          "movieId":4,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      },
+      {
+        "screenId":"3",
+        "screenName":"3",
+          "movieId":3,
+        
+        "Tickets":{
+          "seats":50,
+          "availableSeats":50
+        }
+      }]
+    }
+    ]    
+}

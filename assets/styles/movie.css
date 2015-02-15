@@ -1,0 +1,129 @@
+.movie.loaded {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.movie {
+transition: all 100ms,transform 100ms;
+-moz-transition: all 100ms,transform 100ms;
+-webkit-transition: all 100ms,-webkit-transform 100ms;
+-o-transition: all 100ms,-o-transform 100ms;
+}
+
+.movie {
+width: 173px;
+height: 338px;
+margin: 8px 4px;
+display: inline-block;
+position: relative;
+overflow: hidden;
+border: 1px solid #f68920;
+}
+
+.movie img {
+width: 100%;
+cursor: pointer;
+-webkit-transition: -webkit-transform 100ms;
+-o-transition: -o-transform 100ms;
+transition: transform 100ms;
+-webkit-transform: scale(1.00);
+-ms-transform: scale(1.00);
+-o-transform: scale(1.00);
+transform: scale(1.00);
+}
+
+.meta {
+position: relative;
+height: 49px;
+width: 100%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin-top: 26px;
+/* padding: 8px 10px 0 10px; */
+/* background-color: #fff; */
+-webkit-transition: -webkit-transform 300ms;
+-o-transition: -o-transform 300ms;
+transition: transform 300ms;
+}
+
+.movie:hover .meta{
+  height:auto;
+}
+
+.meta h3 {
+font-size: 14px;
+margin-bottom: 4px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+color: #58595b;
+}
+.meta p a{
+  font-family: "Comic Sans MS", cursive;
+}
+
+.movie p.btn-holder {
+position: absolute;
+width: 173px;
+bottom: 5px;
+}
+
+.button.yellow {
+background: #D81B22;
+color: #fff!important;
+}
+
+.buttonsm {
+border: 1px solid #CD4902;
+border-radius: 3px 3px 3px 3px;
+box-shadow: 1px 1px 0 rgba(255,255,255,0.3) inset;
+color: #FEF4E9!important;
+display: inline-block;
+font-size: 13px;
+font-weight: bold;
+padding: 2px 11px;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+
+.movie.loaded.ng-scope:hover {
+background: #000;
+opacity: 0.5;
+}
+
+.signInBtn {
+  position: fixed;
+  top: 10%;
+  left: 92%;
+  background:#000;
+  border:none;
+}
+.signInBtn:hover{
+  background:#f68920;
+  color:#000 !important;
+}
+.talkbubble {
+background: red;
+position: relative;
+margin-left: 136px;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+}
+.talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid red;
+   border-bottom: 13px solid transparent;
+}
