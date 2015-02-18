@@ -8,7 +8,7 @@
 module.exports = {
 	 login:function(req,resp){
      if(!req.param('userEmail') && !req.param('userPwd')){
-       resp.send('400', {message: 'Bad Request'});
+       resp.send('400', {message: 'Incorrect Username/Password'});
      } else{
          User.findOne(req.allParams()).exec(function(err, res){
             if(res === undefined)

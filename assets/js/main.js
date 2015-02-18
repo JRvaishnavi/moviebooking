@@ -18,9 +18,11 @@ movie.controller('userCtrl', ['$scope','CallApi','localStorageService', function
   $scope.login = function(){
      CallApi.doApiCall(function(data){
        $('#signIn').toggle();
+       $('#popSignin').popover('hide');
        $scope.logout = true;
        $scope.userName = data.userName;
        localStorageService.set('user', data);
+       $('#hmeContact').trigger('reset');
      }, '/login' ,'POST', $scope.user);
   }
   
@@ -31,6 +33,7 @@ movie.controller('userCtrl', ['$scope','CallApi','localStorageService', function
         $scope.logout = true;
         $('#signUp').toggle();
         localStorageService.set(user, data);
+        $('#hmeContact').trigger('reset');
      }, '/signup' ,'POST', $scope.user);
   }
    
@@ -39,6 +42,7 @@ movie.controller('userCtrl', ['$scope','CallApi','localStorageService', function
    $scope.signout = function(){
      localStorageService.remove('user');
      $scope.logout = false;
+     $scope.userName = '';
      window.location.href = "#/movie"
    }
 
@@ -60,6 +64,9 @@ movie.controller('movieCtrl',['$scope','$routeParams','CallApi','localStorageSer
    $scope.theatreId = $routeParams.theatreId;
   
   $scope.filterTheatre = function(data){
+//     var res = _.pick($scope.movieData, 'theatreId');
+//     console.log(res);
+//     console.log(_.contains(res, $scope.movieId));
     return _.contains($scope.movieData[$scope.movieId -1 ].theatreId, data.theatreId);
   }
   
