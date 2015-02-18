@@ -200,3 +200,8 @@ background: rgba(221, 135, 52, 0.58) !important;
   color: rgb(84, 74, 69);
   margin-top:15%;
 }
+
+.popover-content{
+  background: rgba(176, 93, 12, 0.84) !important;
+  width: 150px;
+}

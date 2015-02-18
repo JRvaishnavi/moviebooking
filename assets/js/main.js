@@ -4,7 +4,7 @@ var movie = angular.module('movie',['ngRoute', 'appService','LocalStorageModule'
 
 // Define Home Controller for Movie
 
-movie.controller('userCtrl', ['$scope','CallApi','user','localStorageService', function($scope, CallApi, user, localStorageService){
+movie.controller('userCtrl', ['$scope','CallApi','localStorageService', function($scope, CallApi, localStorageService){
   
    $scope.logout = false;
   
@@ -68,7 +68,15 @@ movie.controller('movieCtrl',['$scope','$routeParams','CallApi','localStorageSer
     if(localStorageService.get('user')){
        window.location.href = "#/bookticket/"+theatreId+"/"+screenId;
     }else{
-      $('#warning').modal();
+     // $('#warning').modal();
+      $('#popSignin').popover({
+        animation:true,
+        content:"Please Login to proceed booking",
+        placement:"left",
+        trigger:'click'
+      });
+      
+      $('#popSignin').popover('show');
     }
   }
   
